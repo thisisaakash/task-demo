@@ -1,0 +1,96 @@
+<section id="addModels" class="section-thm-top">
+  <div class="container">
+    <form id="addModelsForm" method="post" action="">
+      <h2>Add Models</h2>
+      <div class="col-sm-8 col-sm-offset-2">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Model Name</label>
+              <input type="text" class="form-control required" placeholder="Enter Model Name" fieldName="model name" name="md_name" />
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Manufacturer</label>
+              <select class="form-control required select" fieldName="manufacturer" name="m_id">
+                <option value="">Select Manufacturer</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Color</label>
+              <input type="text" class="form-control required" placeholder="Enter Color" fieldName="color" name="md_color" />
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Manufacturing Year</label>
+              <select class="form-control required select" fieldname="manufacturing year" name="md_mfg_year">
+                <option value="">Select Manufacturer</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+                <option value="2009">2009</option>
+                <option value="2008">2008</option>
+                <option value="2007">2007</option>
+                <option value="2006">2006</option>
+                <option value="2005">2005</option>
+                <option value="2004">2004</option>
+                <option value="2003">2003</option>
+                <option value="2002">2002</option>
+                <option value="2001">2001</option>
+                <option value="2000">2000</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Registration Number</label>
+              <input type="text" class="form-control required" placeholder="Enter Registration Number" fieldName="registration number" name="md_reg_number" />
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Chachis Number</label>
+              <input type="text" class="form-control required" placeholder="Enter Chachis Name" fieldName="chachis number" name="md_chachis_number" />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label>Notes</label>
+              <textarea class="form-control required" name="md_notes" placeholder="Enter Notes" fieldName="notes"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label>Upload Car Images</label>
+              <input type="file" class="form-control required select" name="md_car_image[]" fieldName="car images" multiple />
+            </div>
+          </div>
+        </div>
+        <div id="getRequestMessage"></div>
+        <div class="form-group">
+          <input type="hidden" name="function" value="addModel" />
+          <button type="submit" class="btn" name="submit">Add Model</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
